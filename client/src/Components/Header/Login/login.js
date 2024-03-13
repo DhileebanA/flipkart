@@ -5,6 +5,7 @@ export function Login(){
     
     return(
     <>
+    <div className="login_background">
     <form>
         <div class="row">
         <div class="col-5"></div>
@@ -27,6 +28,7 @@ export function Login(){
   <div class="col-5"></div>
         </div>
     </form>
+    </div>
     </>
     );
 }
