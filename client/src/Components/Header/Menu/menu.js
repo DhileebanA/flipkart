@@ -9,13 +9,15 @@ import { Footer } from "../Footer/footer";
 export function Menu(){
 
 return(
-    <>
+   <>
     <Navbar/>
+    <div className="background">
     <Card/>
     <Carousel/>
     <Images/>
     <Cart/>
     <Footer/>
+    </div>
     </>
 );
 }
