@@ -10,9 +10,12 @@ import { UserFashion } from './Components/Header/Userfashion/userfashion';
 import { UserElectronics } from './Components/Header/Userelectronics/userelectronics';
 import { UserFurniture } from './Components/Header/Userfurniture/userfurniture';
 import { Payment } from './Components/Header/Payments/payment';
+import { UserKitchen } from './Components/Header/Kitchen Appliances/userkitchen';
+import { UserGroceries } from './Components/Header/Groceries/usergroceries';
 
 
 function App() {
+  
   return (
   <>
 <BrowserRouter>
@@ -24,7 +27,10 @@ function App() {
 <Route path='/userfashion' element={<UserFashion/>}/>
 <Route path='/userelectronics' element={<UserElectronics/>}/>
 <Route path='/userfurniture' element={<UserFurniture/>}/>
+<Route path='/userkitchen' element={<UserKitchen/>}/>
+<Route path='/usergroceries' element={<UserGroceries/>}/>
 <Route path='/payment' element={<Payment/>}/>
+
 </Routes>
 </BrowserRouter>
   </>

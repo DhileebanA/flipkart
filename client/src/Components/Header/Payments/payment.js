@@ -28,7 +28,7 @@ export function Payment(){
 <form className="row mt-4 ms-3" >
     <div className="col-lg-8 col-md-8 col-8">
     <div className="bg-primary text-white text-center p-1"><h5>LOGIN OR SIGNUP</h5></div>
-    <div className="mt-4 col-lg-6 col-md-6 col-6 ms-2" >
+    <div className="mt-4 col-lg-6 col-md-6 col-8 ms-2" >
     <input type="text" class="form-control" id="validationCustom01" placeholder="Enter Email/ Mobile Number" required></input></div>
     <p className="text-secondary mt-3 col-lg-6 col-md-6 col-6 ms-2">By continuing, you agree to Flipkart's <span className="text-primary">Terms of Use</span> and <span className="text-primary">Privacy Policy.</span></p>
     <button type="button" class="btn btn-warning text-white col-lg-6 col-md-6 col-6 ms-2">CONTINUE</button>

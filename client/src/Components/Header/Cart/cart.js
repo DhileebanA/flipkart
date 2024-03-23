@@ -3,51 +3,61 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactCardSlider from 'react-card-slider-component';
+import { Advertisement } from "../Advertisement/advertisement";
+import { Advertisement2 } from "../Advertisement2/advertisement2";
+
 
 export function Cart() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const slides = [
+    {image:"https://m.media-amazon.com/images/I/41JACWT-wWL._SX679_.jpg",title:"Sony WH-CH520",description:"From ₹3,990"},
+    {image:"https://m.media-amazon.com/images/I/61P-aGTSCtL._SX679_.jpg",title:"Lenovo Legion 5 Pro AMD Ryzen",description:"From ₹96,890"},
+    {image:"https://m.media-amazon.com/images/I/61AHiYyu3ZL._SX679_.jpg",title:"Fire-Boltt Ninja Call Pro Plus 1.83",description:"From ₹1,199"},
+    {image:"https://m.media-amazon.com/images/I/81Tr3Jo8DvL._SX679_.jpg",title:"Sony Alpha ILCE-7M4K",description:"From ₹2,30,989"},
+    {image:"https://m.media-amazon.com/images/I/61goypdjAYL._SX679_.jpg",title:"Apple iPad 10th Generation",description:"From ₹36,900"},
+    {image:"https://m.media-amazon.com/images/I/715vosKfRkL._SX679_.jpg",title:"Zebronics MAX FURY Transparent RGB",description:"From ₹1,099"},
+    {image:"https://m.media-amazon.com/images/I/61MUoISbzjL._SX679_.jpg",title:"Redgear A-15 Wired Gaming Mouse",description:"From ₹549"},
+]
+
+const slides1 = [
+  {image:"https://m.media-amazon.com/images/I/61wKiLYyY+L._SY879_.jpg",title:"Glito Men's White V-Neck T-Shirt",description:"From ₹708"},
+  {image:"https://m.media-amazon.com/images/I/51EH-LHAaYL.jpg",title:"STREETKING Men Denim Shirts",description:"From ₹589"},
+  {image:"https://m.media-amazon.com/images/I/61NNnMLLD+L._SX679_.jpg",title:"GoSriKi Women's Cotton Blend",description:"From ₹679"},
+  {image:"https://m.media-amazon.com/images/I/81mV5uxN3XL._SY879_.jpg",title:"Enthone Women's Banarasi Silk Saree",description:"From ₹899"},
+  {image:"https://m.media-amazon.com/images/I/61SRj3IzD1L._SY879_.jpg",title:"Ben Martin Men's Casual Denim",description:"From ₹699"},
+  {image:"https://m.media-amazon.com/images/I/71UkW9i6uRL._SX679_.jpg",title:"Lymio Casual Shirt for Men",description:"From ₹349"},
+  {image:"https://m.media-amazon.com/images/I/819FbYV4U7L._SX679_.jpg",title:"Hangout-Hub-Couple Tshirts",description:"From ₹711"},
+]
+
+const slides2 = [
+  {image:"https://m.media-amazon.com/images/I/915+sXcUY+L._SX679_.jpg",title:"Sony Bravia Smart LED Google TV",description:"From ₹15,890"},
+  {image:"https://m.media-amazon.com/images/I/61nF5ekaaPL._SX679_.jpg",title:"Blue Star 1.5 Star Air Conditioner",description:"From ₹44,690"},
+  {image:"https://m.media-amazon.com/images/I/71msFUl565L._SX679_.jpg",title:"LG 7 Kg 5 Star Washing Machine ",description:"From ₹28,990"},
+  {image:"https://m.media-amazon.com/images/I/716ClembJvL._SX679_.jpg",title:"Leather Bean Bag",description:"From ₹5,199"},
+  {image:"https://m.media-amazon.com/images/I/61vEZW3J1XL._SY879_.jpg",title:"Samsung 236 L 3 Star Refrigerator",description:"From ₹30,989"},
+  {image:"https://m.media-amazon.com/images/I/618g6GM-ZgL._SX679_.jpg",title:"Bed Mattress, Double Bed Mattress",description:"From ₹5,900"},
+  {image:"https://m.media-amazon.com/images/I/71J8Q-DGvTL._SX679_.jpg",title:"Solimo Picton Engineered Wood King Size Bed",description:"From ₹55,099"},
+  {image:"https://m.media-amazon.com/images/I/511w-d1wp1L._SX679_.jpg",title:"Mattress with 5 Cushion Jute Fabric",description:"From ₹55,490"},
+]
+
+const slides3 = [
+  {image:"https://m.media-amazon.com/images/I/717JX3femML._SX679_.jpg",title:"OnePlus 12R (Cool Blue, 8GB RAM, 128GB)",description:"From ₹39,999"},
+  {image:"https://m.media-amazon.com/images/I/61Tl1z+Hn0L._SX679_.jpg",title:"Samsung Galaxy Flip (8GB RAM, 256GB)",description:"From ₹99,999"},
+  {image:"https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",title:"Apple iPhone 14 (128 GB) - Blue",description:"From ₹58,990"},
+  {image:"https://m.media-amazon.com/images/I/619f09kK7tL._SX679_.jpg",title:"Apple iPhone 14 (128 GB) - Purple",description:"From ₹58,999"},
+  {image:"https://m.media-amazon.com/images/I/91xdNu6S9DL._SX679_.jpg",title:"realme narzo 60 Pro (8GB+128GB)",description:"From ₹21,999"},
+  {image:"https://m.media-amazon.com/images/I/71657TiFeHL._SX679_.jpg",title:"Apple iPhone 15 (128 GB) - Black",description:"From ₹71,290"},
+  {image:"https://m.media-amazon.com/images/I/71i0Kpvi9tL._SX679_.jpg",title:"Oneplus Open (16GB RAM, 512GB)",description:"From ₹1,39,999"},
+]
   return (
     <>
-      <div class="row" >
-        <h2>Best of Electronics</h2>
-        <div class="card col-12 col-md-2 col-sm-6" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/41JACWT-wWL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Sony WH-CH520</h6>
-            <p class="card-text">From ₹3,990</p>
-          </div>
-        </div>
-        <div class="card col-12 col-md-2 col-sm-6 ms-2 " data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/71uPymc2ngL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Laptop</h6>
-            <p class="card-text">From ₹25,599</p>
-          </div>
-        </div>
-        <div class="card col-12 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/71aTghUQfqL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">NoiseFit Halo 1.43</h6>
-            <p class="card-text">From ₹2,499</p>
-          </div>
-        </div>
-        <div class="card col-12 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/81Tr3Jo8DvL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Sony Alpha ILCE-7M4K</h6>
-            <p class="card-text">From ₹70,000</p>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-3 col-sm-6">
-          <img src="https://www.gizchina.com/wp-content/uploads/images/2021/08/Fire-Boltt-Ninja-On-Flipkart-1024x1024.jpg" class="card-img-top" alt="..." />
-        </div>
+      <div>
+        <h2 className="mt-2 text-white">Best of Electronics</h2>
+<span className="img" data-aos="fade-right"><ReactCardSlider slides={slides}/></span>
 
         <div id="carouselExampleAutoplaying" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -70,117 +80,25 @@ export function Cart() {
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <h2>Best of Fashions</h2>
-        <div class="card col-10 col-md-2 col-sm-6 " data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/71teiu5GqNL._SY879_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">rytras Women's Floral Printed Cotton Top</h6>
-            <p class="card-text">From ₹469</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/81kU-VFzKgL._SY879_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title"> House & Shields Men's Skinny Jeanst</h6>
-            <p class="card-text">From ₹599</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/61wKiLYyY+L._SY879_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Glito Men's White Colour V-Neck T-Shirt for Men</h6>
-            <p class="card-text">From ₹708</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/9117U3htP5L._SY879_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Zeel Clothing Women's Silk Semi stitched Lehenga Choli</h6>
-            <p class="card-text">From ₹6,598</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/51EH-LHAaYL.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">STREETKING Street King Men Denim Double Pocket Casual Shirts</h6>
-            <p class="card-text">From ₹589</p>
-          </div>
-        </div>
 
-        <div class="row mt-4 mb-4">
-          <div class="col-5 col-lg-3 col-md-3">
-            <img src="https://assets.mspimages.in/gear/wp-content/uploads/2023/05/Upcoming-Flipkart-sale-2048x1075.png" class="img-fluid d-block" alt="..." />
-          </div>
-          <div class="col-5 col-lg-3 col-md-3">
-            <img src="https://cdn.grabon.in/gograbon/images/merchant/1598961749272.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-          <div class="col-5 col-lg-3 col-md-3">
-            <img src="https://cdn1.desidime.com/SEO/Flipkart-BigSavingDays-NoDates-Desidime-Festival-Banner-SEO-2ndApril2023.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-          <div class="col-5 col-lg-3 col-md-3">
-            <img src="https://s3b.cashify.in/gpro/uploads/2022/05/04130722/Flipkart-Big-Saving-Days-Amazing-Tablet-Deals-You-Must-Look.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-        </div>
-        <h2>Best of Home & Furniture</h2>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/81MRU+3RJLL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Sony Bravia 139 cm (55 inches) 4K Ultra HD Smart LED Google TV KD-55X74L (Black)</h6>
-            <p class="card-text">From ₹15,890</p>
-          </div>
-        </div>
+{/* Best of Fashions */}
+        <h2 className="mt-2 text-white">Best of Fashions</h2>
+<span className="img" data-aos="fade-right"><ReactCardSlider slides={slides1}/></span>
 
+      <Advertisement/>
+{/* Best of Home & Furniture */}       
+        <h2 className="mt-2 text-white">Best of Electronics</h2>
+<span className="img" data-aos="fade-right"> <ReactCardSlider slides={slides2}/></span>
+     
+     <Advertisement2/>
+{/* Best of Mobiles */}
+        <h2 className="mt-2 text-white">Best of Mobiles</h2>
+<span className="img" data-aos="fade-right"> <ReactCardSlider slides={slides3}/></span>
+{/* <div className="row">
+        <h2 className="mt-4 text-white">Best of Mobiles</h2>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
           <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/61nF5ekaaPL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Blue Star 1.5 Ton 5 Star Convertible 5 in 1 Cooling Inverter Split Air Conditioner</h6>
-            <p class="card-text">From ₹44,690</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/51m4NsZau4L._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Sony HT-S40R Real 5.1ch Dolby Audio Soundbar </h6>
-            <p class="card-text">From ₹24,990</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/41VDBgpOPWL.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">Blue Black Bean Bag Cover Without Beans- True 2f</h6>
-            <p class="card-text">From ₹998</p>
-          </div>
-        </div>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/316QwtijW3L.jpg" class="card-img-top w-100 img" alt="..." />
-          <div class="card-body">
-            <h6 class="card-title">SELLER ZONE Humidifiers With Colorful Light For Room</h6>
-            <p class="card-text">From ₹495</p>
-          </div>
-        </div>
-
-        <div className="row mt-4">
-          <div className="col-2"></div>
-          <div class="col-12 col-lg-8">
-            <img src="https://i.ytimg.com/vi/6MBQizq4eX0/maxresdefault.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-        </div>
-
-
-        <h2 className="mt-4">Best of Mobiles</h2>
-        <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
-          <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/717JX3femML._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
+          <img src="" class="card-img-top w-100 img" alt="..." />
           <div class="card-body">
             <h6 class="card-title">OnePlus 12R (Cool Blue, 8GB RAM, 128GB Storage)</h6>
             <p class="card-text">From $39,999</p>
@@ -188,45 +106,37 @@ export function Cart() {
         </div>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
           <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/61Tl1z+Hn0L._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
+          <img src="" class="card-img-top w-100 img" alt="..." />
           <div class="card-body">
-            <h6 class="card-title">Samsung Galaxy Z Flip5 5G (Mint, 8GB RAM, 256GB Storage)</h6>
+            <h6 class="card-title"></h6>
             <p class="card-text">From ₹99,999</p>
           </div>
         </div>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
           <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
+          <img src="" class="card-img-top w-100 img" alt="..." />
           <div class="card-body">
-            <h6 class="card-title">Apple iPhone 14 (128 GB) - Blue</h6>
+            <h6 class="card-title"></h6>
             <p class="card-text">From ₹58,999</p>
           </div>
         </div>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
           <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/619f09kK7tL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
+          <img src="" class="card-img-top w-100 img" alt="..." />
           <div class="card-body">
-            <h6 class="card-title">Apple iPhone 14 (128 GB) - Purple</h6>
+            <h6 class="card-title"></h6>
             <p class="card-text">From ₹58,999</p>
           </div>
         </div>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
           <span className="text-end"><button onClick={() => { alert("Product added to your wishlist😍") }} className="btn btn-outline-danger"><FontAwesomeIcon icon={faHeart} /></button></span>
-          <img src="https://m.media-amazon.com/images/I/61-I2QGRTnL._SX679_.jpg" class="card-img-top w-100 img" alt="..." />
+          <img src="" class="card-img-top w-100 img" alt="..." />
           <div class="card-body">
-            <h6 class="card-title">Vivo Y200 5G (Jungle Green, 8GB RAM, 128GB Storage)</h6>
+            <h6 class="card-title"></h6>
             <p class="card-text">From ₹21,999</p>
           </div>
         </div>
-
-        <div class="row mt-4 mb-3">
-          <div class="col-12 col-lg-6">
-            <img src="https://hotdealszone.in/wp-content/uploads/2019/09/Big-Billion-Days-Furniture-Offers.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-          <div class="col-12 col-lg-6">
-            <img src="https://s3b.cashify.in/gpro/uploads/2021/09/15140000/Best-Smartphone-Deals-on-Flipkart-Big-Billion-Day-Sale.jpg" class="img-fluid d-block" alt="..." />
-          </div>
-        </div>
+        </div> */}
 
       </div>
     </>

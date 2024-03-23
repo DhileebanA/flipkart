@@ -6,26 +6,37 @@ export function Card() {
   return (
     <>
       <div class="container-fluid mb-3">
-        <div class="row bg-white">
-          <div class="active col-3 col-lg-3 card_img">
-            <Link to={`/usermobile`}><img src="https://th.bing.com/th/id/R.65a4137376936ae9be364a44431c9348?rik=0STdQSU%2b2wHJeg&riu=http%3a%2f%2fwww.learningcomputer.com%2fblog%2fwp-content%2fuploads%2f2016%2f11%2fCell-Phone-Plans-topic-page-graphic.png&ehk=gkxu1Dk7B1f91j369HRMYQapfTwy7hxrk%2ftwAM80wcY%3d&risl=&pid=ImgRaw&r=0" class="d-block w-25" alt="Mobiles" /></Link>
-            Mobiles
+        <div class="row bg-white justify-content-center">
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/usermobile`}><img src="https://m.media-amazon.com/images/I/31VjlrbE3bL._SY445_SX342_QL70_FMwebp_.jpg" class="d-block w-50" alt="Mobiles"  /></Link>
+            <h6>Mobiles</h6>
           </div>
 
-          <div class="active col-3 col-lg-3 card_img">
-            <Link to={`/userfashion`}><img src="https://i.pinimg.com/originals/9a/4a/12/9a4a12ff22aa447a57a712b840d9611c.jpg" class="d-block w-25" alt="Fashion" /></Link>
-            Fashion
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/userfashion`}><img src="https://m.media-amazon.com/images/I/71mifRi8j6L._SX679_.jpg" class="d-block w-50" alt="Fashion" /></Link>
+            <h6>Fashion</h6>
           </div>
 
-          <div class="active col-3 col-lg-3 card_img">
-            <Link to={`/userelectronics`}><img src="https://th.bing.com/th/id/OIP.iAgyydPGwY4Qem6TPsNQJgHaHa?pid=ImgDet&w=474&h=474&rs=1" class="d-block w-25" alt="Electronics" /></Link>
-            Electronics
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/userelectronics`}><img src="https://m.media-amazon.com/images/I/51PPxZWH88L._SX300_SY300_QL70_FMwebp_.jpg" class="d-block w-50" alt="Electronics" /></Link>
+            <h6>Electronics</h6>
           </div>
 
-          <div class="active col-3 col-lg-3 card_img">
-            <Link to={`/userfurniture`}><img src="https://th.bing.com/th/id/OIP.Wy57-ghL26Sod84ide53tQHaFd?pid=ImgDet&w=474&h=349&rs=1" class="d-block w-25" alt="Home & Furniture" /></Link>
-            Furniture
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/userfurniture`}><img src="https://m.media-amazon.com/images/I/41h7w5Xn0JL._SX300_SY300_QL70_FMwebp_.jpg" class="d-block w-50" alt="Furniture" /></Link>
+            <h6>Furniture</h6>
           </div>
+
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/userkitchen`}><img src="https://m.media-amazon.com/images/I/61GOmZX6iNL._SX679_.jpg" class="d-block w-50" alt="Home & Furniture" /></Link>
+            <h6>Kitchen Appliances</h6>
+          </div>
+
+          <div class="active col-4 col-lg-2 col-md-2 card_img">
+            <Link to={`/usergroceries`}><img src="https://www.mobkart.co.in/wp-content/uploads/2020/10/20201024_1840361.jpg" class="d-block w-50" alt="Groceries" /></Link>
+            <h6>Groceries</h6>
+          </div>
+
         </div>
       </div>
     </>

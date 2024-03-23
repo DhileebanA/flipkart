@@ -13,45 +13,30 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faCircleInfo, faGift, faStore } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faCircleInfo, faGift, faStore } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer() {
 
   return (
     <>
-      <div>
-        <h5 className="text-secondary">Top Stories : Brand Directory</h5>
+      <div className="mt-3">
+        <h5 className="text-white">Top Stories : Brand Directory</h5>
         <div className="productMain">
-          <div className="productLink col-lg-12 text-decoration-none">
-            <p className="text-secondary">CLOTHING: <a href="" className="text-decoration-none text-secondary">| Kurti |</a> <a href="" className="text-decoration-none text-secondary">| Kurta |</a> <a href="" className="text-decoration-none text-secondary">| Skirt |</a> <a href="" className="text-decoration-none text-secondary">| Shirt |</a> <a href="" className="text-decoration-none text-secondary">| Tops |</a> <a href="" className="text-decoration-none text-secondary">| Tees |</a> <a href="" className="text-decoration-none text-secondary">| Tunics |</a> <a href="" className="text-decoration-none text-secondary">| Tshirt |</a> <a href="" className="text-decoration-none text-secondary">| Jeans |</a>  <a href="" className="text-decoration-none text-secondary">| Jeggings |</a> <a href="" className="text-decoration-none text-secondary">| Leggings |</a>  <a href="" className="text-decoration-none text-secondary">| Patiala |</a>  <a href="" className="text-decoration-none text-secondary">| Palazo |</a> <a href="" className="text-decoration-none text-secondary">| Shorts |</a> <a href="" className="text-decoration-none  text-secondary">| Shawls |</a> <a href="" className="text-decoration-none text-secondary">| Dupatta |</a> <a href="" className="text-decoration-none text-secondary">| Scarf |</a> <a href="" className="text-decoration-none text-secondary">| Sarees |</a> <a href="" className="text-decoration-none text-secondary">| Dresses |</a> <a href="" className="text-decoration-none text-secondary">| One Pieces |</a> <a href="" className="text-decoration-none text-secondary">| Half saree blouse designs |</a> <a href="" className="text-decoration-none text-secondary">| Designer blouses |</a> <a href="" className="text-decoration-none text-secondary">| Cotton saree blouse |</a> <a href="" className="text-decoration-none text-secondary">| Track phant |</a>
+          <div className="productLink col-lg-12 text-decoration-none text-white">
+            <p>CLOTHING: <a href="" className="text-decoration-none text-white">| Kurti |</a> <a href="" className="text-decoration-none text-white">| Kurta |</a> <a href="" className="text-decoration-none text-white">| Skirt |</a> <a href="" className="text-decoration-none text-white">| Shirt |</a> <a href="" className="text-decoration-none text-white">| Tops |</a> <a href="" className="text-decoration-none text-white">| Tees |</a> <a href="" className="text-decoration-none text-white">| Tunics |</a> <a href="" className="text-decoration-none text-white">| Tshirt |</a> <a href="" className="text-decoration-none text-white">| Jeans |</a>  <a href="" className="text-decoration-none text-white">| Jeggings |</a> <a href="" className="text-decoration-none text-white">| Leggings |</a>  <a href="" className="text-decoration-none text-white">| Patiala |</a>  <a href="" className="text-decoration-none text-white">| Palazo |</a> <a href="" className="text-decoration-none text-white">| Shorts |</a> <a href="" className="text-decoration-none  text-white">| Shawls |</a> <a href="" className="text-decoration-none text-white">| Dupatta |</a> <a href="" className="text-decoration-none text-white">| Scarf |</a> <a href="" className="text-decoration-none text-white">| Sarees |</a> <a href="" className="text-decoration-none text-white">| Dresses |</a> <a href="" className="text-decoration-none text-white">| One Pieces |</a> <a href="" className="text-decoration-none text-white">| Half saree blouse designs |</a> <a href="" className="text-decoration-none text-white">| Designer blouses |</a> <a href="" className="text-decoration-none text-white">| Cotton saree blouse |</a> <a href="" className="text-decoration-none text-white">| Track phant |</a>
             </p>
           </div>
           <div className="productLink col-lg-12">
-            <p className="text-secondary">MOBILES: <a href="" className="text-decoration-none text-secondary">| Samsung Galaxy S24 5G |</a> <a href="" className="text-decoration-none text-secondary">| Samsung Galaxy S24+ 5G |</a> <a href="" className="text-decoration-none text-secondary">| iPhone 12 64GB |</a> <a href="" className="text-decoration-none text-secondary">| iPhone 12 Pro 512GB |</a> <a href="" className="text-decoration-none text-secondary">| iPhone 12 128GB |</a> <a href="" className="text-decoration-none text-secondary">| Vivo Y15 |</a> <a href="" className="text-decoration-none text-secondary">| Samsung Galaxy S21 FE 5G |</a> <a href="" className="text-decoration-none text-secondary">| Infinix HOT 30i |</a> <a href="" className="text-decoration-none text-secondary">| Realme 10 pro 5G |</a>  <a href="" className="text-decoration-none text-secondary">| MOTOROLA G62 5G |</a> <a href="" className="text-decoration-none text-secondary">| REDMI Note 12 Pro 5G |</a>  <a href="" className="text-decoration-none text-secondary">| Infinix Smart 7 |</a>  <a href="" className="text-decoration-none text-secondary">| Vivo Y12 |</a> <a href="" className="text-decoration-none text-secondary">| Oppo A12 |</a> <a href="" className="text-decoration-none text-secondary">| Motorola 5G phone |</a> <a href="" className="text-decoration-none text-secondary">| Realme 5g Smartphone |</a> <a href="" className="text-decoration-none text-secondary">| Nokia Mobile |</a> <a href="" className="text-decoration-none text-secondary">| Samsung Mobile |</a> <a href="" className="text-decoration-none text-secondary">| iPhone |</a> <a href="" className="text-decoration-none text-secondary">| Oppo |</a> <a href="" className="text-decoration-none text-secondary">| Vivo mobile |</a> <a href="" className="text-decoration-none  text-secondary">| iPhone 11 pro |</a> <a href="" className="text-decoration-none text-secondary">| iPhone 11 |</a> <a href="" className="text-decoration-none  text-secondary">| Samsung A51 |</a>
+            <p className="text-white">MOBILES: <a href="" className="text-decoration-none text-white">| Samsung Galaxy S24 5G |</a> <a href="" className="text-decoration-none text-white">| Samsung Galaxy S24+ 5G |</a> <a href="" className="text-decoration-none text-white">| iPhone 12 64GB |</a> <a href="" className="text-decoration-none text-white">| iPhone 12 Pro 512GB |</a> <a href="" className="text-decoration-none text-white">| iPhone 12 128GB |</a> <a href="" className="text-decoration-none text-white">| Vivo Y15 |</a> <a href="" className="text-decoration-none text-white">| Samsung Galaxy S21 FE 5G |</a> <a href="" className="text-decoration-none text-white">| Infinix HOT 30i |</a> <a href="" className="text-decoration-none text-white">| Realme 10 pro 5G |</a>  <a href="" className="text-decoration-none text-white">| MOTOROLA G62 5G |</a> <a href="" className="text-decoration-none text-white">| REDMI Note 12 Pro 5G |</a>  <a href="" className="text-decoration-none text-white">| Infinix Smart 7 |</a>  <a href="" className="text-decoration-none text-white">| Vivo Y12 |</a> <a href="" className="text-decoration-none text-white">| Oppo A12 |</a> <a href="" className="text-decoration-none text-white">| Motorola 5G phone |</a> <a href="" className="text-decoration-none text-white">| Realme 5g Smartphone |</a> <a href="" className="text-decoration-none text-white">| Nokia Mobile |</a> <a href="" className="text-decoration-none text-white">| Samsung Mobile |</a> <a href="" className="text-decoration-none text-white">| iPhone |</a> <a href="" className="text-decoration-none text-white">| Oppo |</a> <a href="" className="text-decoration-none text-white">| Vivo mobile |</a> <a href="" className="text-decoration-none  text-white">| iPhone 11 pro |</a> <a href="" className="text-decoration-none text-white">| iPhone 11 |</a> <a href="" className="text-decoration-none  text-white">| Samsung A51 |</a>
             </p>
           </div>
-          <div className="productLink col-lg-12 text-secondary">
-            <p>FURNITURE <a href="" className="text-decoration-none text-secondary">| Furniture |</a> <a href="" className="text-decoration-none text-secondary">| Sofas |</a> <a href="" className="text-decoration-none text-secondary">| Beds |</a> <a href="" className="text-decoration-none text-secondary">| Dining sets |</a> <a href="" className="text-decoration-none text-secondary">| Wardrobes |</a> <a href="" className="text-decoration-none text-secondary">| Mattresses |</a> <a href="" className="text-decoration-none text-secondary">| TV Units |</a> <a href="" className="text-decoration-none text-secondary">| Tables|</a> <a href="" className="text-decoration-none text-secondary">| Chairs |</a>  <a href="" className="text-decoration-none text-secondary">| Shelves |</a> <a href="" className="text-decoration-none text-secondary">| Bean Bags |</a>  <a href="" className="text-decoration-none text-secondary">| Office Chairs |</a>  <a href="" className="text-decoration-none text-secondary">| Computer Table |</a> <a href="" className="text-decoration-none text-secondary">| Office Tables |</a> <a href="" className="text-decoration-none text-secondary">| Red Sofa |</a> <a href="" className="text-decoration-none text-secondary">| Wakefit Beds |</a> <a href="" className="text-decoration-none text-secondary">| White Sofa |</a> <a href="" className="text-decoration-none text-secondary">| Wakefit Mattresses |</a> <a href="" className="text-decoration-none text-secondary">| Green Sofa |</a> <a href="" className="text-decoration-none text-secondary">| Black Sofa |</a> <a href="" className="text-decoration-none text-secondary">| Brown Sofa |</a>
+          <div className="productLink col-lg-12 text-white">
+            <p>FURNITURE <a href="" className="text-decoration-none text-white">| Furniture |</a> <a href="" className="text-decoration-none text-white">| Sofas |</a> <a href="" className="text-decoration-none text-white">| Beds |</a> <a href="" className="text-decoration-none text-white">| Dining sets |</a> <a href="" className="text-decoration-none text-white">| Wardrobes |</a> <a href="" className="text-decoration-none text-white">| Mattresses |</a> <a href="" className="text-decoration-none text-white">| TV Units |</a> <a href="" className="text-decoration-none text-white">| Tables|</a> <a href="" className="text-decoration-none text-white">| Chairs |</a>  <a href="" className="text-decoration-none text-white">| Shelves |</a> <a href="" className="text-decoration-none text-white">| Bean Bags |</a>  <a href="" className="text-decoration-none text-white">| Office Chairs |</a>  <a href="" className="text-decoration-none text-white">| Computer Table |</a> <a href="" className="text-decoration-none text-white">| Office Tables |</a> <a href="" className="text-decoration-none text-white">| Red Sofa |</a> <a href="" className="text-decoration-none text-white">| Wakefit Beds |</a> <a href="" className="text-decoration-none text-white">| White Sofa |</a> <a href="" className="text-decoration-none text-white">| Wakefit Mattresses |</a> <a href="" className="text-decoration-none text-white">| Green Sofa |</a> <a href="" className="text-decoration-none text-white">| Black Sofa |</a> <a href="" className="text-decoration-none text-white">| Brown Sofa |</a>
             </p>
           </div>
         </div>
       </div>
-      <div className="text-secondary">
-        <h5>Flipkart Terms of Use</h5>
-        <p>
-
-          This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as applicable and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures.
-
-          This document is published in accordance with the provisions of Rule 3 (1) of the Information Technology (Intermediaries guidelines) Rules, 2011 that require publishing the rules and regulations, privacy policy and Terms of Use for access or usage of domain name [www.flipkart.com] (“Website”), including the related mobile site and mobile application (hereinafter referred to as “Platform”)
-
-          The Platform is owned by Flipkart Internet Private Limited, a company incorporated under the Companies Act, 1956 with its registered office at Buildings Alyssa, Begonia & Clover, Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru – 560103, Karnataka, India and its branch offices at 2nd Floor, Block F (Flora), Embassy Tech Village, Outer Ring Road, Devarabeesanahalli Village, Bengaluru-560103, Karnataka, India and; 447/C, 12th Main, 4th Block, Koramangala, Bengaluru-560034, Karnataka, India (hereinafter referred to as "Flipkart").
-
-          Your use of the Platform and services and tools are governed by the following terms and conditions ("Terms of Use") as applicable to the Platform including the applicable policies which are incorporated herein by way of reference. If You transact on the Platform, You shall be subject to the policies that are applicable to the Platform for such transaction. By mere use of the Platform, You shall be contracting with Flipkart Internet Private Limited and these terms and conditions including the policies constitute Your binding obligations, with Flipkart.
-
-          For the purpose of these Terms of Use, wherever the context so requires "You" or "User" shall mean any natural or legal person who has agreed to become a buyer on the Platform by providing Registration Data while registering on the Platform as Registered User using the computer systems. Flipkart allows the User to surf the Platform or making purchases without registering on the Platform. The term "We", "Us", "Our" shall mean Flipkart Internet Private Limited.</p>
-      </div>
-
-      <MDBFooter className='text-center' color='white' bgColor='dark'>
+      <MDBFooter className='text-center foot_bg' color='white'>
         <MDBContainer className='p-4'>
           <section className='mb-4'>
             <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
@@ -75,7 +60,7 @@ export function Footer() {
           <section className=''>
             <MDBRow>
               <MDBCol lg='3' md='6' className='mb-4 mb-md-0 col-3'>
-                <h6 className='text-uppercase text-secondary'>ABOUT</h6>
+                <h6 className='text-uppercase'>ABOUT</h6>
 
                 <ul className='list-unstyled mb-0'>
                   <li>
@@ -117,7 +102,7 @@ export function Footer() {
               </MDBCol>
 
               <MDBCol lg='3' md='6' className='mb-4 mb-md-0 col-3'>
-                <h6 className='text-uppercase text-secondary'>GROUP COMPANIES</h6>
+                <h6 className='text-uppercase'>GROUP COMPANIES</h6>
 
                 <ul className='list-unstyled mb-0'>
                   <li>
@@ -144,7 +129,7 @@ export function Footer() {
               </MDBCol>
 
               <MDBCol lg='3' md='6' className='mb-4 mb-md-0 col-3'>
-                <h6 className='text-uppercase text-secondary'>HELP</h6>
+                <h6 className='text-uppercase'>HELP</h6>
 
                 <ul className='list-unstyled mb-0'>
                   <li>
@@ -176,7 +161,7 @@ export function Footer() {
               </MDBCol>
 
               <MDBCol lg='3' md='6' className='mb-4 mb-md-0 col-3'>
-                <h6 className='text-uppercase text-secondary'>CONSUMER POLICY</h6>
+                <h6 className='text-uppercase'>CONSUMER POLICY</h6>
 
                 <ul className='list-unstyled mb-0'>
                   <li>
@@ -220,7 +205,7 @@ export function Footer() {
           </section>
         </MDBContainer>
 
-        <div className='text-center p-3 row' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        <div className='text-center p-3 row' style={{ backgroundColor: 'rgb(0, 0, 40)' }}>
           <a class="text-white col-4 link-offset-2 link-underline link-underline-opacity-0" href="#"><FontAwesomeIcon icon={faStore} style={{ color: "#FFD43B", }} /> Become a Seller</a>
           <a class="text-white col-4 link-offset-2 link-underline link-underline-opacity-0" href="#"><FontAwesomeIcon icon={faGift} style={{ color: "#FFD43B", }} /> Gift Cards</a>
           <a class="text-white col-4 link-offset-2 link-underline link-underline-opacity-0" href="#"><FontAwesomeIcon icon={faCircleInfo} style={{ color: "#FFD43B", }} /> Help Center</a>
