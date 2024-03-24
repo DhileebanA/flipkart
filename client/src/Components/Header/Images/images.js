@@ -21,7 +21,7 @@ export function Images() {
             </div> */}
 
 
-    <div className="offerMain mt-3"> 
+    <div className="offerMain mt-5"> 
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
 <div class="carousel-inner">

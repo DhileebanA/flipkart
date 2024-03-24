@@ -4,7 +4,7 @@ export function Carousel() {
 
   return (
     <>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide mt-3" data-bs-ride="carousel">
         <div class="carousel-inner advertisement">
           <div class="carousel-item active">
             <img src="https://rukminim1.flixcart.com/flap/1800/1800/image/b82668b67d89e8db.jpg?q=80" class="d-block w-100" alt="..." />

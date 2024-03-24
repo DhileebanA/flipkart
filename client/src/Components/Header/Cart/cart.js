@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactCardSlider from 'react-card-slider-component';
 import { Advertisement } from "../Advertisement/advertisement";
 import { Advertisement2 } from "../Advertisement2/advertisement2";
+import { Suggest } from "../Suggest/suggest";
+import { RecentView } from "../RecentlyViewed/recentView";
 
 
 export function Cart() {
@@ -34,7 +36,7 @@ const slides1 = [
 ]
 
 const slides2 = [
-  {image:"https://m.media-amazon.com/images/I/915+sXcUY+L._SX679_.jpg",title:"Sony Bravia Smart LED Google TV",description:"From ₹15,890"},
+  {image:"https://m.media-amazon.com/images/I/81s35LoX36L._SX679_.jpg",title:"Samsung Crystal iSmart 4K",description:"From ₹15,890"},
   {image:"https://m.media-amazon.com/images/I/61nF5ekaaPL._SX679_.jpg",title:"Blue Star 1.5 Star Air Conditioner",description:"From ₹44,690"},
   {image:"https://m.media-amazon.com/images/I/71msFUl565L._SX679_.jpg",title:"LG 7 Kg 5 Star Washing Machine ",description:"From ₹28,990"},
   {image:"https://m.media-amazon.com/images/I/716ClembJvL._SX679_.jpg",title:"Leather Bean Bag",description:"From ₹5,199"},
@@ -56,8 +58,12 @@ const slides3 = [
   return (
     <>
       <div>
+      <div className="row ms-1 justify-content-center mt-4" data-aos="fade-right">
+  <div className="col-lg-12 col-md-12">
         <h2 className="mt-2 text-white">Best of Electronics</h2>
-<span className="img" data-aos="fade-right"><ReactCardSlider slides={slides}/></span>
+<ReactCardSlider slides={slides}/>
+</div>
+</div>
 
         <div id="carouselExampleAutoplaying" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -82,18 +88,31 @@ const slides3 = [
         </div>
 
 {/* Best of Fashions */}
+<div className="row ms-1 justify-content-center" data-aos="fade-right">
+  <div className="col-lg-12 col-md-12">
         <h2 className="mt-2 text-white">Best of Fashions</h2>
-<span className="img" data-aos="fade-right"><ReactCardSlider slides={slides1}/></span>
-
+        <ReactCardSlider slides={slides1}/>
+</div>
+</div>
       <Advertisement/>
-{/* Best of Home & Furniture */}       
-        <h2 className="mt-2 text-white">Best of Electronics</h2>
-<span className="img" data-aos="fade-right"> <ReactCardSlider slides={slides2}/></span>
+
+      <Suggest/>
+{/* Best of Home & Furniture */}  
+<div className="row ms-1 justify-content-center mt-4" data-aos="fade-right">   
+<div className="col-lg-12 col-md-12">
+        <h2 className="mt-2 text-white">Best of Home Appliances & Furniture</h2>
+ <ReactCardSlider slides={slides2}/>
+     </div>
+     </div>
      
      <Advertisement2/>
 {/* Best of Mobiles */}
+<div className="row ms-1 justify-content-center mt-4"  data-aos="fade-right">   
+<div className="col-lg-12 col-md-12">
         <h2 className="mt-2 text-white">Best of Mobiles</h2>
-<span className="img" data-aos="fade-right"> <ReactCardSlider slides={slides3}/></span>
+<ReactCardSlider slides={slides3}/>
+</div>
+     </div>
 {/* <div className="row">
         <h2 className="mt-4 text-white">Best of Mobiles</h2>
         <div class="card col-10 col-md-2 col-sm-6 ms-2" data-aos="fade-right">
@@ -137,7 +156,7 @@ const slides3 = [
           </div>
         </div>
         </div> */}
-
+<RecentView/>
       </div>
     </>
   );

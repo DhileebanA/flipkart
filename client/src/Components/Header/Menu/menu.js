@@ -5,6 +5,7 @@ import { Carousel } from "../Carousel/carousel";
 import { Images } from "../Images/images";
 import { Cart } from "../Cart/cart";
 import { Footer } from "../Footer/footer";
+import { Recommend } from "../Recommend/reccommend";
 // import { Product } from "../Product/product";
 // import { View } from "../ProductView/productview";
 // import { CartProvider } from "react-use-cart";
@@ -19,16 +20,13 @@ return(
     <div className="background">
     <Card/>
     <Carousel/>
+    <Recommend/>
     {/* <CartProvider>
     <Product/>
     <View/>
     </CartProvider> */}
-    <div className="col-12"></div>
-    <div className="col-12"></div>
     <Cart/>
     <Images/>
-    <div className="col-12"></div>
-    <div className="col-12 col-lg-12 col-md-12"></div>
     <Footer/>
     </div>
     </div>
